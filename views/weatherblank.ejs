@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sleepy Weather</title>
+</head>
+
+
+
+<!-- css start -->
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+body{
+    color: rgb(0, 0, 0);
+    background: rgb(88,242,219);
+background: radial-gradient(circle, rgba(88,242,219,1) 0%, rgba(220,232,249,1) 100%);
+}
+.main-box{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.info{
+    background: rgb(155, 155, 155);
+  display: flex;
+  border-radius: 10px;
+  padding: 40px;
+  margin-top: 200px;
+  background: rgba( 255, 255, 255, 0.30 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.0px );
+  
+}
+
+.searchbar {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    position: relative;
+    display: flex;
+    top: 15%;
+    left: 0%;
+  }
+
+
+.searchTerm {
+
+    border: 2px solid rgb(255, 255, 255);
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 15px 0 0 15px;
+    outline: none;    
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    width: 290px;
+  }
+  
+  .searchTerm:focus{
+    color: rgb(0, 0, 0);
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 34px;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(138, 138, 138);
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+
+  .header {
+  overflow: hidden;
+  background: rgba( 255, 255, 255, 0.30 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.0px );
+  padding: 10px ;
+}
+
+.logo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+</style>
+
+<!-- css over -->
+
+
+
+
+
+
+
+
+<body>
+    
+
+    <header class="header">
+        <img src="/images/Logo.png"class="logo">
+      </header>
+
+
+
+    <div>
+    <form action="/" method="post">
+
+    <div class="main-box"> 
+        <div class="info">
+            <div class="wrap">
+            <div class="searchbar">
+                <input type="text" class="searchTerm" name="cityname" placeholder="Enter City Name">
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+               </button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </form>
+</div>
+    </body>
+</html>
